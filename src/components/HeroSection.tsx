@@ -1,7 +1,6 @@
-
 import React, { useEffect, useRef } from "react";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Search, Upload, DollarSign } from "lucide-react";
+import { ArrowRight, Search, Upload, DollarSign, Music } from "lucide-react";
 
 const HeroSection = () => {
   const backgroundRef = useRef<HTMLDivElement>(null);
