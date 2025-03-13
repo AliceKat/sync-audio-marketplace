@@ -1,3 +1,4 @@
+
 import React, { useEffect, useRef } from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Search, Upload, DollarSign, Music } from "lucide-react";
@@ -37,7 +38,8 @@ const HeroSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8 animate-slide-up">
             <div>
-              <div className="inline-block mb-2 animate-fade-in">
+              {/* Increased the margin-top to move the tagline down */}
+              <div className="inline-block mt-24 sm:mt-16 mb-2 animate-fade-in">
                 <span className="bg-synchub-primary/10 text-synchub-primary font-barlow text-sm uppercase font-semibold tracking-wider py-1 px-3 rounded-full">
                   Music Licensing Marketplace
                 </span>
