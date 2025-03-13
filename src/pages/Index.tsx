@@ -1,3 +1,4 @@
+
 import React from "react";
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
@@ -5,7 +6,7 @@ import FeaturesSection from "@/components/FeaturesSection";
 import MusicBrowser from "@/components/MusicBrowser";
 import AudioPlayer from "@/components/AudioPlayer";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, CheckCircle2, Upload, DollarSign, Music } from "lucide-react";
+import { ArrowRight, CheckCircle2, Upload, DollarSign, Music, Search } from "lucide-react";
 
 const Index = () => {
   return (
