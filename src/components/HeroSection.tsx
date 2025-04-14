@@ -1,7 +1,7 @@
 
 import React, { useEffect, useRef } from "react";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Search, Upload, DollarSign, Music } from "lucide-react";
+import { ArrowRight, Search, Upload, DollarSign } from "lucide-react";
 
 const HeroSection = () => {
   const backgroundRef = useRef<HTMLDivElement>(null);
@@ -35,8 +35,8 @@ const HeroSection = () => {
       </div>
 
       <div className="container mx-auto px-4 md:px-6 py-10 relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div className="space-y-8 animate-slide-up">
+        <div className="flex flex-col items-center lg:items-start">
+          <div className="space-y-8 animate-slide-up max-w-2xl mx-auto lg:mx-0 text-center lg:text-left">
             <div>
               {/* Increased the margin-top to move the tagline down */}
               <div className="inline-block mt-24 sm:mt-16 mb-2 animate-fade-in">
@@ -53,7 +53,7 @@ const HeroSection = () => {
               </p>
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <Button className="bg-synchub-primary hover:bg-synchub-primary/90 text-white group px-6 py-6 text-lg">
                 <span>Browse Music</span>
                 <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
@@ -63,7 +63,7 @@ const HeroSection = () => {
               </Button>
             </div>
 
-            <div className="pt-4 flex flex-col sm:flex-row items-center gap-8">
+            <div className="pt-4 flex flex-col sm:flex-row items-center gap-8 justify-center lg:justify-start">
               <div className="flex items-center gap-2">
                 <Search className="h-5 w-5 text-synchub-primary" />
                 <span className="font-medium">Find Perfect Tracks</span>
@@ -75,68 +75,6 @@ const HeroSection = () => {
               <div className="flex items-center gap-2">
                 <DollarSign className="h-5 w-5 text-synchub-primary" />
                 <span className="font-medium">Flexible Licensing</span>
-              </div>
-            </div>
-          </div>
-
-          <div className="relative rounded-2xl overflow-hidden shadow-2xl animate-fade-in">
-            <div className="glass-panel aspect-[4/3] w-full p-6 rounded-2xl overflow-hidden">
-              <div className="animation-delay-100 animate-scale-in">
-                <div className="rounded-xl bg-black/5 p-5 h-full flex flex-col">
-                  <div className="flex items-center justify-between mb-6">
-                    <div className="flex items-center gap-3">
-                      <div className="w-12 h-12 rounded-full bg-synchub-primary/20 flex items-center justify-center">
-                        <Music className="h-6 w-6 text-synchub-primary" />
-                      </div>
-                      <div>
-                        <h3 className="font-barlow text-lg font-semibold">Track Explorer</h3>
-                        <p className="text-sm text-synchub-text/70">Find your perfect sync</p>
-                      </div>
-                    </div>
-                    <Button variant="outline" size="sm" className="border-synchub-primary text-synchub-primary">
-                      License
-                    </Button>
-                  </div>
-
-                  <div className="h-40 bg-synchub-text/5 rounded-lg mb-4 overflow-hidden">
-                    <div className="h-full flex flex-col justify-center items-center">
-                      <div className="wave-bars">
-                        {[...Array(20)].map((_, i) => (
-                          <div 
-                            key={i} 
-                            className="wave-bar" 
-                            style={{ 
-                              height: `${Math.random() * 100}%`,
-                              animation: `wave ${1 + Math.random() * 0.5}s ease-in-out infinite ${Math.random() * 0.5}s`
-                            }}
-                          />
-                        ))}
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="grid grid-cols-3 gap-2 mb-4">
-                    <div className="rounded bg-synchub-text/5 px-3 py-2 text-xs">
-                      <span className="text-synchub-text/60 block">Genre</span>
-                      <span className="font-medium">Electronic</span>
-                    </div>
-                    <div className="rounded bg-synchub-text/5 px-3 py-2 text-xs">
-                      <span className="text-synchub-text/60 block">Mood</span>
-                      <span className="font-medium">Uplifting</span>
-                    </div>
-                    <div className="rounded bg-synchub-text/5 px-3 py-2 text-xs">
-                      <span className="text-synchub-text/60 block">BPM</span>
-                      <span className="font-medium">128</span>
-                    </div>
-                  </div>
-
-                  <div className="mt-auto">
-                    <div className="rounded-lg bg-synchub-text/5 px-4 py-3 flex justify-between items-center">
-                      <span className="font-barlow font-semibold">Standard License</span>
-                      <span className="text-synchub-primary font-semibold">$299</span>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
           </div>

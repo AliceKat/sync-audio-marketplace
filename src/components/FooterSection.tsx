@@ -1,6 +1,6 @@
 
 import React from "react";
-import { Music } from "lucide-react";
+import { Music, Linkedin, Mail } from "lucide-react";
 
 const FooterSection = () => {
   return (
@@ -17,6 +17,24 @@ const FooterSection = () => {
             <p className="text-white/70 text-sm">
               The premier marketplace for music licensing, connecting creators and businesses worldwide.
             </p>
+            <div className="mt-4 flex gap-4">
+              <a 
+                href="https://www.linkedin.com/company/thesynchub/" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-white hover:text-synchub-primary transition-colors"
+                aria-label="Visit SyncHub LinkedIn"
+              >
+                <Linkedin className="h-5 w-5" />
+              </a>
+              <a 
+                href="mailto:info@synchub.ee" 
+                className="text-white hover:text-synchub-primary transition-colors"
+                aria-label="Email SyncHub"
+              >
+                <Mail className="h-5 w-5" />
+              </a>
+            </div>
           </div>
           
           <div>
@@ -40,12 +58,28 @@ const FooterSection = () => {
           </div>
           
           <div>
-            <h4 className="text-lg font-barlow font-semibold mb-4">Legal</h4>
+            <h4 className="text-lg font-barlow font-semibold mb-4">Contact</h4>
             <ul className="space-y-2">
-              <li><a href="#" className="text-white/70 hover:text-synchub-primary transition-colors">Terms of Service</a></li>
-              <li><a href="#" className="text-white/70 hover:text-synchub-primary transition-colors">Privacy Policy</a></li>
-              <li><a href="#" className="text-white/70 hover:text-synchub-primary transition-colors">Copyright Info</a></li>
-              <li><a href="#" className="text-white/70 hover:text-synchub-primary transition-colors">Cookies Policy</a></li>
+              <li>
+                <a 
+                  href="mailto:info@synchub.ee" 
+                  className="text-white/70 hover:text-synchub-primary transition-colors flex items-center gap-2"
+                >
+                  <Mail className="h-4 w-4" />
+                  info@synchub.ee
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="https://www.linkedin.com/company/thesynchub/" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="text-white/70 hover:text-synchub-primary transition-colors flex items-center gap-2"
+                >
+                  <Linkedin className="h-4 w-4" />
+                  LinkedIn
+                </a>
+              </li>
             </ul>
           </div>
         </div>
