@@ -18,7 +18,7 @@ const FeaturesSection = () => {
             </span>
           </div>
           <h2 className="text-4xl md:text-5xl font-oswald font-bold mb-6">
-            Connecting Music Providers with Music Buyers
+            The Complete Licensing Solution
           </h2>
           <p className="text-lg text-synchub-text/80 max-w-2xl mx-auto">
             SyncHub simplifies the entire music licensing process, from discovery to payment,
