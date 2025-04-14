@@ -1,6 +1,6 @@
-
 import React, { useEffect, useRef } from "react";
-import { ArrowRight } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { ArrowRight, Search, Upload } from "lucide-react";
 
 const HeroSection = () => {
   const backgroundRef = useRef<HTMLDivElement>(null);
@@ -49,6 +49,27 @@ const HeroSection = () => {
               <p className="mt-6 text-lg text-synchub-text/80 leading-relaxed max-w-xl font-montserrat">
                 SyncHub connects music providers with businesses seeking the perfect soundtrack. Streamlined licensing, transparent pricing, and a curated marketplace at your fingertips.
               </p>
+            </div>
+
+            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+              <Button className="bg-synchub-primary hover:bg-synchub-primary/90 text-white group px-6 py-6 text-lg">
+                <span>Browse Music</span>
+                <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+              </Button>
+              <Button variant="outline" className="border-synchub-primary text-synchub-primary hover:bg-synchub-primary/10 px-6 py-6 text-lg">
+                Upload Your Music
+              </Button>
+            </div>
+
+            <div className="pt-4 flex flex-col sm:flex-row items-center gap-8 justify-center lg:justify-start">
+              <div className="flex items-center gap-2">
+                <Search className="h-5 w-5 text-synchub-primary" />
+                <span className="font-medium">Find Perfect Tracks</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <Upload className="h-5 w-5 text-synchub-primary" />
+                <span className="font-medium">Seamless Uploads</span>
+              </div>
             </div>
           </div>
         </div>
