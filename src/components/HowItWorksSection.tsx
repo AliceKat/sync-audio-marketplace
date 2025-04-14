@@ -1,6 +1,6 @@
 
 import React from "react";
-import { CheckCircle2, Upload, Search, DollarSign } from "lucide-react";
+import { CheckCircle2, Upload, Search, Euro } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 
@@ -93,7 +93,7 @@ const HowItWorksSection = () => {
             <div className="absolute top-0 inset-x-0 h-1 bg-gradient-to-r from-synchub-primary to-synchub-primary/30 transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500 ease-app-transition"></div>
             
             <div className="w-16 h-16 rounded-full bg-synchub-primary/10 flex items-center justify-center text-synchub-primary mx-auto mb-6">
-              <DollarSign className="h-7 w-7" />
+              <Euro className="h-7 w-7" />
             </div>
             
             <h3 className="text-xl font-barlow font-semibold mb-4">

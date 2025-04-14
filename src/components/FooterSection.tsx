@@ -1,6 +1,5 @@
-
 import React from "react";
-import { Music, Linkedin, Mail } from "lucide-react";
+import { Linkedin, Mail } from "lucide-react";
 
 const FooterSection = () => {
   return (
@@ -9,7 +8,6 @@ const FooterSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <Music className="h-6 w-6 text-synchub-primary" />
               <span className="text-xl font-oswald font-semibold tracking-tight">
                 SYNC<span className="text-synchub-primary">HUB</span>
               </span>

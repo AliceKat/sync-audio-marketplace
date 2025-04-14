@@ -1,9 +1,8 @@
-
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
-import { Search, Menu, X, Music, UserCircle } from "lucide-react";
+import { Search, Menu, X, UserCircle } from "lucide-react";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -33,7 +32,6 @@ const Navbar = () => {
           to="/"
           className="flex items-center gap-2 animate-fade-in"
         >
-          <Music className="h-8 w-8 text-synchub-primary" />
           <span className="text-2xl font-oswald font-semibold tracking-tight">
             SYNC<span className="text-synchub-primary">HUB</span>
           </span>

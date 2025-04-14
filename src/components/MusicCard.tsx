@@ -1,7 +1,7 @@
 
 import React, { useState } from "react";
 import { cn } from "@/lib/utils";
-import { Play, Pause, Heart, Plus, Music, Tag } from "lucide-react";
+import { Play, Pause, Heart, Plus, Music, Tag, Euro } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 
@@ -93,7 +93,7 @@ const MusicCard: React.FC<MusicCardProps> = ({
           </div>
           
           <Badge className="bg-synchub-primary/10 text-synchub-primary hover:bg-synchub-primary/20">
-            ${price}
+            €{price}
           </Badge>
         </div>
         

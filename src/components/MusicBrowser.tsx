@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import { cn } from "@/lib/utils";
 import { Search, Filter, SlidersHorizontal, Music } from "lucide-react";
@@ -95,7 +94,7 @@ const MusicBrowser = () => {
         <div className="text-center mb-12">
           <div className="inline-block mb-3">
             <span className="bg-synchub-primary/10 text-synchub-primary font-barlow text-sm uppercase font-semibold tracking-wider py-1 px-3 rounded-full">
-              Music Library
+              Music Licensing Marketplace
             </span>
           </div>
           <h2 className="text-4xl font-oswald font-bold mb-6">
@@ -166,7 +165,6 @@ const MusicBrowser = () => {
             </Button>
           </div>
           
-          {/* Mobile filters */}
           {showFilters && (
             <div className="mt-4 p-4 border border-synchub-text/10 rounded-lg bg-white md:hidden space-y-4">
               <div className="space-y-2">

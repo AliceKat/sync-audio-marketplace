@@ -1,7 +1,7 @@
 
 import React, { useEffect, useRef } from "react";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Search, Upload, DollarSign } from "lucide-react";
+import { ArrowRight, Search, Upload } from "lucide-react";
 
 const HeroSection = () => {
   const backgroundRef = useRef<HTMLDivElement>(null);
@@ -45,8 +45,8 @@ const HeroSection = () => {
                 </span>
               </div>
               <h1 className="text-5xl sm:text-6xl lg:text-7xl font-oswald font-bold leading-tight text-balance">
-                License Music. <br />
-                <span className="text-synchub-primary animate-pulse-light">Simplified.</span>
+                Simplifying the <br />
+                <span className="text-synchub-primary animate-pulse-light">music licensing process.</span>
               </h1>
               <p className="mt-6 text-lg text-synchub-text/80 leading-relaxed max-w-xl font-montserrat">
                 SyncHub connects music providers with businesses seeking the perfect soundtrack. Streamlined licensing, transparent pricing, and a curated library at your fingertips.
@@ -71,10 +71,6 @@ const HeroSection = () => {
               <div className="flex items-center gap-2">
                 <Upload className="h-5 w-5 text-synchub-primary" />
                 <span className="font-medium">Seamless Uploads</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <DollarSign className="h-5 w-5 text-synchub-primary" />
-                <span className="font-medium">Flexible Licensing</span>
               </div>
             </div>
           </div>
