@@ -14,7 +14,7 @@ const FeaturesSection = () => {
         <div className="text-center mb-16 max-w-3xl mx-auto">
           <div className="inline-block mb-3">
             <span className="bg-synchub-primary/10 text-synchub-primary font-barlow text-sm uppercase font-semibold tracking-wider py-1 px-3 rounded-full">
-              Why Choose SyncHub
+              Features
             </span>
           </div>
           <h2 className="text-4xl md:text-5xl font-oswald font-bold mb-6">
@@ -30,12 +30,12 @@ const FeaturesSection = () => {
           <FeatureCard
             icon={<Music2 className="h-7 w-7" />}
             title="High-Quality Music"
-            description="Access a curated library of professional tracks from independent artists, publishers, and record labels."
+            description="Access a curated marketplace of professional tracks from independent artists, publishers, and record labels."
           />
           <FeatureCard
             icon={<Upload className="h-7 w-7" />}
             title="Simple Upload"
-            description="Music providers can easily upload their tracks and set licensing terms in minutes."
+            description="Music sellers can easily upload their tracks and set licensing terms in minutes."
           />
           <FeatureCard
             icon={<Filter className="h-7 w-7" />}
@@ -55,7 +55,7 @@ const FeaturesSection = () => {
           <FeatureCard
             icon={<Users className="h-7 w-7" />}
             title="Direct Communication"
-            description="Connect directly with music providers or users to discuss licensing details."
+            description="Connect directly with music sellers or buyers to discuss licensing details."
           />
         </div>
       </div>

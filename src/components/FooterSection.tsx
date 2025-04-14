@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Linkedin, Mail } from "lucide-react";
 
@@ -50,8 +51,7 @@ const FooterSection = () => {
             <ul className="space-y-2">
               <li><a href="#" className="text-white/70 hover:text-synchub-primary transition-colors">Help Center</a></li>
               <li><a href="#" className="text-white/70 hover:text-synchub-primary transition-colors">Licensing Guide</a></li>
-              <li><a href="#" className="text-white/70 hover:text-synchub-primary transition-colors">API Documentation</a></li>
-              <li><a href="#" className="text-white/70 hover:text-synchub-primary transition-colors">Community</a></li>
+              <li><a href="#" className="text-white/70 hover:text-synchub-primary transition-colors">FAQs</a></li>
             </ul>
           </div>
           

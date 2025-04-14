@@ -39,9 +39,8 @@ const Navbar = () => {
 
         <nav className="hidden md:flex space-x-8 animate-slide-down">
           <NavLink href="/">Home</NavLink>
-          <NavLink href="/browse">Browse</NavLink>
-          <NavLink href="/providers">For Providers</NavLink>
-          <NavLink href="/users">For Users</NavLink>
+          <NavLink href="/providers">For Music Sellers</NavLink>
+          <NavLink href="/users">For Music Buyers</NavLink>
           <NavLink href="/about">About</NavLink>
         </nav>
 
@@ -87,22 +86,16 @@ const Navbar = () => {
             Home
           </MobileNavLink>
           <MobileNavLink
-            href="/browse"
-            onClick={() => setMobileMenuOpen(false)}
-          >
-            Browse
-          </MobileNavLink>
-          <MobileNavLink
             href="/providers"
             onClick={() => setMobileMenuOpen(false)}
           >
-            For Providers
+            For Music Sellers
           </MobileNavLink>
           <MobileNavLink
             href="/users"
             onClick={() => setMobileMenuOpen(false)}
           >
-            For Users
+            For Music Buyers
           </MobileNavLink>
           <MobileNavLink
             href="/about"

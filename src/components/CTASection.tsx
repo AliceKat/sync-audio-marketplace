@@ -21,10 +21,10 @@ const CTASection = () => {
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button className="bg-synchub-primary hover:bg-synchub-primary/90 text-white px-8 py-6 text-lg">
-              Join as Music Provider
+              Join as Music Seller
             </Button>
             <Button variant="outline" className="border-synchub-primary text-synchub-primary hover:bg-synchub-primary/10 px-8 py-6 text-lg">
-              Join as Business User
+              Join as Music Buyer
             </Button>
           </div>
         </div>
