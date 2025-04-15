@@ -7,6 +7,7 @@ import MusicBrowser from "@/components/MusicBrowser";
 import HowItWorksSection from "@/components/HowItWorksSection";
 import CTASection from "@/components/CTASection";
 import FooterSection from "@/components/FooterSection";
+import SubscriptionSection from "@/components/SubscriptionSection";
 
 const Index = () => {
   return (
@@ -18,6 +19,7 @@ const Index = () => {
         <FeaturesSection />
         <HowItWorksSection />
         <MusicBrowser />
+        <SubscriptionSection />
         <CTASection />
       </main>
       
