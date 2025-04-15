@@ -1,8 +1,6 @@
 
 import React from "react";
 import { CheckCircle2, Upload, Search, Euro } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
 
 const HowItWorksSection = () => {
   return (
@@ -119,13 +117,6 @@ const HowItWorksSection = () => {
               </div>
             </div>
           </div>
-        </div>
-        
-        <div className="text-center">
-          <Button className="bg-synchub-primary hover:bg-synchub-primary/90 text-white group px-6 py-6 text-lg">
-            <span>Get Started</span>
-            <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
-          </Button>
         </div>
       </div>
     </section>

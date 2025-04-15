@@ -5,7 +5,6 @@ import HeroSection from "@/components/HeroSection";
 import FeaturesSection from "@/components/FeaturesSection";
 import MusicBrowser from "@/components/MusicBrowser";
 import HowItWorksSection from "@/components/HowItWorksSection";
-import CTASection from "@/components/CTASection";
 import FooterSection from "@/components/FooterSection";
 import SubscriptionSection from "@/components/SubscriptionSection";
 
@@ -20,7 +19,6 @@ const Index = () => {
         <HowItWorksSection />
         <MusicBrowser />
         <SubscriptionSection />
-        <CTASection />
       </main>
       
       <FooterSection />

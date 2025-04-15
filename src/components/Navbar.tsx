@@ -1,8 +1,9 @@
+
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
-import { Search, Menu, X, UserCircle } from "lucide-react";
+import { Search, Menu, X } from "lucide-react";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -32,9 +33,11 @@ const Navbar = () => {
           to="/"
           className="flex items-center gap-2 animate-fade-in"
         >
-          <span className="text-2xl font-oswald font-semibold tracking-tight">
-            SYNC<span className="text-synchub-primary">HUB</span>
-          </span>
+          <img 
+            src="/lovable-uploads/4498b510-90d4-4c83-9787-f71b3b25233b.png" 
+            alt="SyncHub Logo" 
+            className="h-8"
+          />
         </Link>
 
         <nav className="hidden md:flex space-x-8 animate-slide-down">
