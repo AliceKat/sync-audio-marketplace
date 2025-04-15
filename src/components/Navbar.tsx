@@ -2,8 +2,8 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { cn } from "@/lib/utils";
+import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Search, Menu, X } from "lucide-react";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -18,6 +18,14 @@ const Navbar = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+    setMobileMenuOpen(false);
+  };
 
   return (
     <header
@@ -41,23 +49,10 @@ const Navbar = () => {
         </Link>
 
         <nav className="hidden md:flex space-x-8 animate-slide-down">
-          <NavLink href="/">Home</NavLink>
-          <NavLink href="/providers">For Music Sellers</NavLink>
-          <NavLink href="/users">For Music Buyers</NavLink>
-          <NavLink href="/about">About</NavLink>
+          <NavLink onClick={() => scrollToSection("features")}>Features</NavLink>
+          <NavLink onClick={() => scrollToSection("process")}>Process</NavLink>
+          <NavLink onClick={() => scrollToSection("marketplace")}>Music Licensing Marketplace</NavLink>
         </nav>
-
-        <div className="hidden md:flex items-center space-x-4 animate-slide-down">
-          <Button variant="ghost" size="icon">
-            <Search className="h-5 w-5" />
-          </Button>
-          <Button className="bg-synchub-primary hover:bg-synchub-primary/90 text-white">
-            Sign In
-          </Button>
-          <Button variant="outline" className="border-synchub-primary text-synchub-primary hover:bg-synchub-primary/10">
-            Register
-          </Button>
-        </div>
 
         <Button
           variant="ghost"
@@ -82,76 +77,47 @@ const Navbar = () => {
         )}
       >
         <div className="py-8 px-4 flex flex-col space-y-6">
-          <MobileNavLink
-            href="/"
-            onClick={() => setMobileMenuOpen(false)}
-          >
-            Home
+          <MobileNavLink onClick={() => scrollToSection("features")}>
+            Features
           </MobileNavLink>
-          <MobileNavLink
-            href="/providers"
-            onClick={() => setMobileMenuOpen(false)}
-          >
-            For Music Sellers
+          <MobileNavLink onClick={() => scrollToSection("process")}>
+            Process
           </MobileNavLink>
-          <MobileNavLink
-            href="/users"
-            onClick={() => setMobileMenuOpen(false)}
-          >
-            For Music Buyers
+          <MobileNavLink onClick={() => scrollToSection("marketplace")}>
+            Music Licensing Marketplace
           </MobileNavLink>
-          <MobileNavLink
-            href="/about"
-            onClick={() => setMobileMenuOpen(false)}
-          >
-            About
-          </MobileNavLink>
-        </div>
-        <div className="p-4 mt-auto border-t flex flex-col space-y-3">
-          <Button className="w-full bg-synchub-primary hover:bg-synchub-primary/90 text-white">
-            Sign In
-          </Button>
-          <Button
-            variant="outline"
-            className="w-full border-synchub-primary text-synchub-primary hover:bg-synchub-primary/10"
-          >
-            Register
-          </Button>
         </div>
       </div>
     </header>
   );
 };
 
-const NavLink = ({ href, children }: { href: string; children: React.ReactNode }) => {
+const NavLink = ({ onClick, children }: { onClick: () => void; children: React.ReactNode }) => {
   return (
-    <Link
-      to={href}
-      className="text-sm font-medium transition-colors hover:text-synchub-primary relative group"
+    <button
+      onClick={onClick}
+      className="text-sm font-medium transition-colors hover:text-synchub-primary relative group cursor-pointer"
     >
       {children}
       <span className="absolute inset-x-0 -bottom-1 h-0.5 bg-synchub-primary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-app-transition"></span>
-    </Link>
+    </button>
   );
 };
 
 const MobileNavLink = ({
-  href,
   onClick,
   children,
 }: {
-  href: string;
   onClick: () => void;
   children: React.ReactNode;
 }) => {
   return (
-    <Link
-      to={href}
-      className="text-xl font-barlow font-medium px-2 py-2 hover:bg-synchub-primary/10 rounded-md transition-colors"
+    <button
+      className="text-xl font-barlow font-medium px-2 py-2 hover:bg-synchub-primary/10 rounded-md transition-colors w-full text-left"
       onClick={onClick}
     >
       {children}
-    </Link>
+    </button>
   );
 };
 

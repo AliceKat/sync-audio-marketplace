@@ -4,7 +4,7 @@ import { Music2, Upload, Filter, CreditCard, FileText, Users } from "lucide-reac
 
 const FeaturesSection = () => {
   return (
-    <section className="py-24 relative overflow-hidden">
+    <section id="features" className="py-24 relative overflow-hidden">
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-synchub-primary/5 to-transparent"></div>
         <div className="absolute -bottom-10 -right-40 h-80 w-80 rounded-full bg-synchub-primary/10 blur-3xl"></div>

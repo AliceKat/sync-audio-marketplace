@@ -1,29 +1,30 @@
-
 import React from "react";
 import { CheckCircle2, Upload, Search, Euro } from "lucide-react";
 
 const HowItWorksSection = () => {
   return (
-    <section className="py-24 bg-white relative overflow-hidden">
+    <section id="process" className="py-24 bg-gradient-to-b from-white to-synchub-primary/5 relative overflow-hidden">
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute -top-40 -left-40 h-80 w-80 rounded-full bg-synchub-primary/5 blur-3xl"></div>
+        <div className="absolute top-0 right-0 w-full h-1/3 bg-gradient-to-b from-white to-transparent"></div>
+        <div className="absolute -top-40 -right-40 h-80 w-80 rounded-full bg-synchub-primary/10 blur-3xl"></div>
       </div>
-      
+
       <div className="container mx-auto px-4 md:px-6 relative z-10">
         <div className="text-center mb-16 max-w-3xl mx-auto">
           <div className="inline-block mb-3">
             <span className="bg-synchub-primary/10 text-synchub-primary font-barlow text-sm uppercase font-semibold tracking-wider py-1 px-3 rounded-full">
-              Process
+              How It Works
             </span>
           </div>
           <h2 className="text-4xl md:text-5xl font-oswald font-bold mb-6">
-            How SyncHub Works
+            Streamlined Music Licensing in Three Simple Steps
           </h2>
-          <p className="text-lg text-synchub-text/80">
-            Our streamlined process makes music licensing simple for both providers and users.
+          <p className="text-lg text-synchub-text/80 max-w-2xl mx-auto">
+            Whether you're a music creator or business seeking music, our platform makes
+            the licensing process easy, transparent, and efficient.
           </p>
         </div>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
           <div className="text-center p-8 rounded-xl bg-white shadow-sm border border-synchub-text/5 relative group hover:border-synchub-primary/20 transition-all duration-300">
             <div className="absolute top-0 inset-x-0 h-1 bg-gradient-to-r from-synchub-primary to-synchub-primary/30 transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500 ease-app-transition"></div>

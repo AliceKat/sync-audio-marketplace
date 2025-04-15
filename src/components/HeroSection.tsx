@@ -33,8 +33,8 @@ const HeroSection = () => {
       </div>
 
       <div className="container mx-auto px-4 md:px-6 py-10 relative z-10">
-        <div className="flex flex-col items-center lg:items-start">
-          <div className="space-y-8 animate-slide-up max-w-2xl mx-auto lg:mx-0 text-center lg:text-left">
+        <div className="flex flex-col items-center">
+          <div className="space-y-8 animate-slide-up max-w-2xl mx-auto text-center">
             <div>
               <div className="inline-block mt-24 sm:mt-16 mb-2 animate-fade-in">
                 <span className="bg-synchub-primary/10 text-synchub-primary font-barlow text-sm uppercase font-semibold tracking-wider py-1 px-3 rounded-full">
@@ -45,8 +45,8 @@ const HeroSection = () => {
                 Simplifying the <br />
                 <span className="text-synchub-primary animate-pulse-light">music licensing process.</span>
               </h1>
-              <p className="mt-6 text-lg text-synchub-text/80 leading-relaxed max-w-xl font-montserrat">
-                SyncHub connects music providers with businesses seeking the perfect soundtrack. Streamlined licensing, transparent pricing, and a curated marketplace at your fingertips.
+              <p className="mt-6 text-lg text-synchub-text/80 leading-relaxed max-w-xl mx-auto font-montserrat">
+                SyncHub connects labels, publishers and artists with ad agencies, game developers, filmmakers and other content creators, allowing for seamless licensing of commercial music.
               </p>
             </div>
           </div>
