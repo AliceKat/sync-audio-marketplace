@@ -1,4 +1,5 @@
-import React from "react";
+
+import React, { useState } from "react";
 import { cn } from "@/lib/utils";
 import { Search, Filter, SlidersHorizontal, Music } from "lucide-react";
 import { Input } from "@/components/ui/input";
