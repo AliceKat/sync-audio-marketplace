@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { cn } from "@/lib/utils";
@@ -43,7 +44,7 @@ const Navbar = () => {
           <img 
             src="/lovable-uploads/dc5be5ba-1e04-4452-a367-0adf25d44bf9.png" 
             alt="SyncHub Logo" 
-            className="h-16"
+            className="h-24 bg-synchub-background p-2 rounded-lg"
           />
         </Link>
 
