@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { cn } from "@/lib/utils";
@@ -42,7 +41,7 @@ const Navbar = () => {
           className="flex items-center gap-2 animate-fade-in"
         >
           <img 
-            src="/lovable-uploads/4498b510-90d4-4c83-9787-f71b3b25233b.png" 
+            src="/lovable-uploads/ce05d36e-acae-4c10-9abd-e99bebf56123-image.jpeg" 
             alt="SyncHub Logo" 
             className="h-8"
           />
@@ -51,7 +50,6 @@ const Navbar = () => {
         <nav className="hidden md:flex space-x-8 animate-slide-down absolute left-1/2 transform -translate-x-1/2">
           <NavLink onClick={() => scrollToSection("features")}>Features</NavLink>
           <NavLink onClick={() => scrollToSection("process")}>Process</NavLink>
-          <NavLink onClick={() => scrollToSection("marketplace")}>Music Licensing Marketplace</NavLink>
         </nav>
 
         <Button
@@ -82,9 +80,6 @@ const Navbar = () => {
           </MobileNavLink>
           <MobileNavLink onClick={() => scrollToSection("process")}>
             Process
-          </MobileNavLink>
-          <MobileNavLink onClick={() => scrollToSection("marketplace")}>
-            Music Licensing Marketplace
           </MobileNavLink>
         </div>
       </div>
