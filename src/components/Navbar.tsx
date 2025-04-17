@@ -48,7 +48,7 @@ const Navbar = () => {
           />
         </Link>
 
-        <nav className="hidden md:flex space-x-8 animate-slide-down">
+        <nav className="hidden md:flex space-x-8 animate-slide-down absolute left-1/2 transform -translate-x-1/2">
           <NavLink onClick={() => scrollToSection("features")}>Features</NavLink>
           <NavLink onClick={() => scrollToSection("process")}>Process</NavLink>
           <NavLink onClick={() => scrollToSection("marketplace")}>Music Licensing Marketplace</NavLink>
@@ -76,7 +76,7 @@ const Navbar = () => {
           mobileMenuOpen ? "translate-x-0" : "translate-x-full"
         )}
       >
-        <div className="py-8 px-4 flex flex-col space-y-6">
+        <div className="py-8 px-4 flex flex-col space-y-6 items-center">
           <MobileNavLink onClick={() => scrollToSection("features")}>
             Features
           </MobileNavLink>
