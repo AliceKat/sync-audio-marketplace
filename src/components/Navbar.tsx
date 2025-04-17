@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { cn } from "@/lib/utils";
@@ -44,7 +43,7 @@ const Navbar = () => {
           <img 
             src="/lovable-uploads/dc5be5ba-1e04-4452-a367-0adf25d44bf9.png" 
             alt="SyncHub Logo" 
-            className="h-8"
+            className="h-16"
           />
         </Link>
 
@@ -67,7 +66,6 @@ const Navbar = () => {
         </Button>
       </div>
 
-      {/* Mobile menu */}
       <div
         className={cn(
           "fixed inset-0 top-[57px] backdrop-blur-md bg-white/90 z-40 flex flex-col",
@@ -118,4 +116,3 @@ const MobileNavLink = ({
 };
 
 export default Navbar;
-
