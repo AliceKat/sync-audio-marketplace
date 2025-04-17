@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { cn } from "@/lib/utils";
@@ -41,7 +42,7 @@ const Navbar = () => {
           className="flex items-center gap-2 animate-fade-in"
         >
           <img 
-            src="/lovable-uploads/ce05d36e-acae-4c10-9abd-e99bebf56123-image.jpeg" 
+            src="/lovable-uploads/dc5be5ba-1e04-4452-a367-0adf25d44bf9.png" 
             alt="SyncHub Logo" 
             className="h-8"
           />
@@ -117,3 +118,4 @@ const MobileNavLink = ({
 };
 
 export default Navbar;
+
