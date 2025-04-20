@@ -1,4 +1,3 @@
-
 import React from "react";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
@@ -30,7 +29,7 @@ const SubscriptionSection = () => {
   };
 
   return (
-    <section className="py-24 bg-synchub-primary/5 relative overflow-hidden">
+    <section id="subscription" className="py-24 bg-synchub-primary/5 relative overflow-hidden">
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-0 right-0 w-96 h-96 bg-synchub-primary/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3"></div>
         <div className="absolute bottom-0 left-20 w-80 h-80 bg-synchub-highlight/10 rounded-full blur-3xl translate-y-1/3"></div>
@@ -40,7 +39,7 @@ const SubscriptionSection = () => {
         <div className="max-w-2xl mx-auto text-center">
           <h2 className="text-4xl md:text-5xl font-oswald font-bold mb-6">Stay up to date</h2>
           <p className="text-lg text-synchub-text/80 mb-10">
-            Sign up to receive updates on the beta launch
+            We're looking for labels, publishers, artists, ad agencies, game developers, film producers and content creators to be part of the beta test. If you're interested in that or simply in staying up to date on the latest info, sign up below.
           </p>
 
           <Form {...form}>
@@ -79,4 +78,3 @@ const SubscriptionSection = () => {
 };
 
 export default SubscriptionSection;
-

@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { cn } from "@/lib/utils";
@@ -51,6 +50,7 @@ const Navbar = () => {
         <nav className="hidden md:flex space-x-8 animate-slide-down absolute left-1/2 transform -translate-x-1/2">
           <NavLink onClick={() => scrollToSection("features")}>Features</NavLink>
           <NavLink onClick={() => scrollToSection("process")}>Process</NavLink>
+          <NavLink onClick={() => scrollToSection("subscription")}>Sign Up</NavLink>
         </nav>
 
         <Button
@@ -80,6 +80,9 @@ const Navbar = () => {
           </MobileNavLink>
           <MobileNavLink onClick={() => scrollToSection("process")}>
             Process
+          </MobileNavLink>
+          <MobileNavLink onClick={() => scrollToSection("subscription")}>
+            Sign Up
           </MobileNavLink>
         </div>
       </div>
