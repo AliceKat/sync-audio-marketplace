@@ -24,10 +24,9 @@ const SubscriptionSection = () => {
   });
 
   const onSubmit = (data: FormValues) => {
-    // Here you would normally send this to your API
-    console.log("Subscription email:", data.email);
-    toast.success("Thank you for subscribing!");
-    form.reset();
+    // Redirect to Sendsmaily landing page with the email
+    const sendmailyLink = `https://synchub.sendsmaily.net/landing-pages/9cbd5d68-4e1e-457c-9418-df4167d53f13/html/?email=${encodeURIComponent(data.email)}`;
+    window.location.href = sendmailyLink;
   };
 
   return (
@@ -80,3 +79,4 @@ const SubscriptionSection = () => {
 };
 
 export default SubscriptionSection;
+
