@@ -1,12 +1,10 @@
+
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { cn } from "@/lib/utils";
-import { Menu, X } from "lucide-react";
-import { Button } from "@/components/ui/button";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -23,7 +21,6 @@ const Navbar = () => {
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
-    setMobileMenuOpen(false);
   };
 
   return (
@@ -52,39 +49,6 @@ const Navbar = () => {
           <NavLink onClick={() => scrollToSection("process")}>Process</NavLink>
           <NavLink onClick={() => scrollToSection("subscription")}>Sign Up</NavLink>
         </nav>
-
-        <Button
-          variant="ghost"
-          size="icon"
-          className="md:hidden"
-          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-        >
-          {mobileMenuOpen ? (
-            <X className="h-6 w-6" />
-          ) : (
-            <Menu className="h-6 w-6" />
-          )}
-        </Button>
-      </div>
-
-      <div
-        className={cn(
-          "fixed inset-0 top-[57px] backdrop-blur-md bg-white/90 z-40 flex flex-col",
-          "transition-transform duration-300 ease-app-transition md:hidden",
-          mobileMenuOpen ? "translate-x-0" : "translate-x-full"
-        )}
-      >
-        <div className="py-8 px-4 flex flex-col space-y-6 items-center">
-          <MobileNavLink onClick={() => scrollToSection("features")}>
-            Features
-          </MobileNavLink>
-          <MobileNavLink onClick={() => scrollToSection("process")}>
-            Process
-          </MobileNavLink>
-          <MobileNavLink onClick={() => scrollToSection("subscription")}>
-            Sign Up
-          </MobileNavLink>
-        </div>
       </div>
     </header>
   );
@@ -102,21 +66,5 @@ const NavLink = ({ onClick, children }: { onClick: () => void; children: React.R
   );
 };
 
-const MobileNavLink = ({
-  onClick,
-  children,
-}: {
-  onClick: () => void;
-  children: React.ReactNode;
-}) => {
-  return (
-    <button
-      className="text-xl font-barlow font-medium px-2 py-2 hover:bg-synchub-primary/10 rounded-md transition-colors w-full text-left"
-      onClick={onClick}
-    >
-      {children}
-    </button>
-  );
-};
-
 export default Navbar;
+
